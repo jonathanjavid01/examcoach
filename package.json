@@ -1,0 +1,1 @@
+{"description":"ExamCoach IELTS — static site + AI grader / email capture backend","engines":{"node":">=18"},"name":"examcoach","private":true,"scripts":{"start":"node server/examcoach-server.mjs"},"type":"module","version":"1.0.0"}

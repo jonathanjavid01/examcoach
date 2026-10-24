@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: examcoach
+    env: node
+    plan: free
+    buildCommand: ""
+    startCommand: npm start
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ADMIN_TOKEN
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash
+      - key: DAILY_GRADE_CAP
+        value: "200"

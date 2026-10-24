@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ExamCoach — IELTS | Stuck at Band 6? See exactly why.</title>
+<meta name="description" content="Free IELTS Writing Checker: estimated band, 4-criteria scores, top 3 mistakes and a stronger rewrite in 30 seconds. Plus a personal 30-day plan to your target band.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14213d;--paper:#f3f5fa;--card:#fff;--line:#d9e0ee;--mut:#556078;--red:#d62839;--hl:#ffe45e;--blue:#2b50d6;--blue2:#1f3ca8;--green:#15855a;--amber:#a86a00}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font-family:"Atkinson Hyperlegible",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.55;background:var(--paper);color:var(--ink)}
+h1,h2,h3,.logo,.scorebig,.amt{font-family:"Bricolage Grotesque","Atkinson Hyperlegible",system-ui,sans-serif;letter-spacing:-.01em}
+a{color:var(--blue2)}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:22px}.logo span{background:var(--hl);padding:0 4px;border-radius:3px}
+nav{display:flex;gap:2px;overflow-x:auto;max-width:100%}
+nav a{color:var(--mut);text-decoration:none;padding:6px 10px;border-radius:6px;font-size:14px;white-space:nowrap}nav a:hover{background:var(--paper);color:var(--ink)}
+.btn{display:inline-block;background:var(--ink);color:#fff;border:2px solid var(--ink);padding:11px 20px;border-radius:8px;font-weight:700;font-size:15px;font-family:inherit;line-height:1.2;cursor:pointer;text-decoration:none}
+.btn:hover{background:var(--blue2);border-color:var(--blue2)}
+.btn.gold{background:var(--hl);border-color:var(--hl);color:var(--ink)}.btn.gold:hover{background:#ffd91f;border-color:#ffd91f}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn.small{padding:7px 13px;font-size:13px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.hero{padding:56px 20px 48px;background:#fff;border-bottom:1px solid var(--line)}
+.heroin{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(34px,5vw,56px);line-height:1.05;margin:0 0 16px;font-weight:800}
+.lead{font-size:19px;max-width:34em;margin:0 0 22px}.hero .btn{margin:0 8px 10px 0}
+.sheet{background:#fffef8;border:1px solid var(--line);border-left:5px solid var(--red);border-radius:6px;padding:22px 22px 18px;box-shadow:6px 6px 0 var(--ink);transform:rotate(1.2deg)}
+.sheet .essay{font-size:19px;line-height:1.7;margin:0 0 10px}
+.sheet mark{background:var(--hl);padding:0 2px}.sheet mark.r{background:#ffd0d4}
+.notes{margin:0 0 20px;padding:0;list-style:none;font-size:14px;color:var(--red)}.notes li{margin:3px 0}
+.track{height:8px;background:var(--line);border-radius:99px;position:relative}
+.track i{position:absolute;top:-5px;width:18px;height:18px;border-radius:50%;margin-left:-9px;border:3px solid #fff}
+.track .now{background:var(--red);left:40%}.track .tgt{background:var(--blue);left:60%}
+.ticks{display:flex;justify-content:space-between;font-size:12px;color:var(--mut);margin-top:10px}
+.rlab{font-size:13px;margin:8px 0 0}.rlab b{color:var(--red)}.rlab b+b{color:var(--blue);margin-left:14px}
+.wrap{max-width:1080px;margin:0 auto;padding:18px 20px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--red);border-radius:6px;padding:26px;margin:22px 0}
+h2{margin:0 0 12px;font-size:28px;line-height:1.15}h3{margin:18px 0 8px}
+label{font-weight:700;font-size:14px;display:block;margin:12px 0 5px}
+select,input,textarea{width:100%;padding:11px 12px;border:1.5px solid #b9c3d8;border-radius:6px;font-size:16px;font-family:inherit;background:#fff;color:var(--ink)}
+textarea{min-height:220px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.pill{display:inline-block;background:var(--hl);color:var(--ink);padding:2px 9px;border-radius:4px;font-size:12px;font-weight:700;margin:2px}
+.scorebig{font-size:clamp(40px,7vw,64px);font-weight:800;text-align:center;line-height:1.1}
+.bar{height:12px;background:#e6ebf5;border-radius:99px;overflow:hidden}.bar>i{display:block;height:100%;background:var(--blue)}
+.crit{display:grid;grid-template-columns:170px 1fr 44px;gap:10px;align-items:center;margin:10px 0;font-size:15px}
+.mistake{background:#fff6e3;border-left:4px solid var(--amber);padding:11px 13px;border-radius:4px;margin:9px 0}
+.good{background:#eaf7f0;border-left:4px solid var(--green);padding:11px 13px;border-radius:4px;margin:9px 0}
+.rewrite{background:#f1f4ff;border:1px solid #c5d0f5;padding:14px;border-radius:6px;line-height:1.65;white-space:pre-wrap}
+.price{background:#fff;border:2px solid var(--line);border-radius:10px;padding:22px;text-align:center}.price.hot{border-color:var(--ink);background:#fffbe0;box-shadow:5px 5px 0 var(--ink)}
+.price .amt{font-size:38px;font-weight:800}
+table{width:100%;border-collapse:collapse}th,td{border:1px solid var(--line);padding:9px;text-align:left;font-size:15px}th{background:#eef1f8}#planOut{overflow-x:auto}
+.small{font-size:14px;color:var(--mut)}.center{text-align:center}
+.q{border:1px solid var(--line);border-radius:6px;padding:13px;margin:12px 0}
+.opt{display:block;width:100%;text-align:left;background:#f5f7fb;border:1.5px solid var(--line);padding:10px 12px;border-radius:6px;margin:6px 0;cursor:pointer;font-family:inherit;font-size:16px;color:var(--ink)}.opt:hover{background:#e9edf9}
+.opt.right{background:#d8f1e4;border-color:var(--green)}.opt.wrong{background:#fde1e3;border-color:var(--red)}
+footer{background:var(--ink);color:#d3d9e8;padding:30px 20px;font-size:14px;line-height:1.7}
+.kpi{display:flex;gap:14px;flex-wrap:wrap}.kpi div{background:var(--paper);border-radius:6px;padding:14px;flex:1;min-width:130px;text-align:center}.kpi b{font-family:"Bricolage Grotesque",sans-serif;font-size:30px;display:block}
+canvas{max-width:100%;height:auto}.hidden{display:none}.locked{filter:blur(6px);pointer-events:none;user-select:none}.gate{background:#fff8d6;border:2px dashed var(--amber,#a86a00);border-radius:10px;padding:14px;margin:14px 0}.gate input{margin:6px 0}#pricing{margin:40px 0}
+.toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);background:var(--ink);color:#fff;padding:12px 18px;border-radius:8px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:50;max-width:90vw}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(max-width:820px){.heroin{grid-template-columns:1fr}.sheet{transform:none}}
+@media(max-width:640px){.crit{grid-template-columns:110px 1fr 38px}.card{padding:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.toast{transition:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Exam<span>Coach</span> IELTS</div>
+  <nav>
+    <a href="#checker">Free Checker</a><a href="#diagnostic">Diagnostic</a><a href="#plan">30-Day Plan</a>
+    <a href="#speaking">Speaking</a><a href="#drills">Drills</a><a href="#bank">Question Bank</a><a href="#pricing">Pricing</a><a href="#dashboard">My Progress</a>
+  </nav>
+</header>
+
+<section class="hero"><div class="heroin">
+<div><h1>Stuck at Band 6? See exactly why.</h1>
+<p class="lead">Paste your essay and get an estimated band, scores for all four official criteria, your top mistakes and a stronger opening, in seconds. Free, no sign-up for your first checks.</p>
+<p><a class="btn gold" href="#checker">Check my essay free</a><a class="btn ghost" href="#plan">Build my study plan</a></p>
+<p class="small">Based on the public IELTS band descriptors. Scores are estimates, shown as a range. Not affiliated with IELTS, British Council, IDP or Cambridge.</p></div>
+<div class="sheet" aria-hidden="true"><p class="essay">Many <mark>kids</mark> cannot attend university because tuition is <mark>very expensive</mark>. <mark class="r">Also</mark>, graduates pay more tax.</p>
+<ul class="notes"><li>kids: use "children" (register)</li><li>very expensive: try "prohibitively expensive"</li><li>Also: try "Furthermore,"</li></ul>
+<div class="track"><i class="now"></i><i class="tgt"></i></div><div class="ticks"><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></div>
+<p class="rlab"><b>You: Band 6.0</b><b>Goal: Band 7.0</b></p></div></div></section>
+
+<div class="wrap">
+
+<!-- ============ FREE CHECKER ============ -->
+<section class="card" id="checker">
+  <h2>Free IELTS Writing Checker</h2>
+  <div class="grid">
+    <div><label>Task type</label>
+      <select id="taskType"><option value="2">Task 2 — Essay</option><option value="1a">Task 1 Academic — Graph / Chart</option><option value="1g">Task 1 General — Letter</option></select></div>
+    <div><label>Load a sample to try it</label>
+      <select id="sampleLoad"><option value="">— choose a sample —</option><option value="b6">Sample essay ≈ Band 6.0</option><option value="b75">Sample essay ≈ Band 7.5</option></select></div>
+  </div>
+  <label>Essay prompt (optional, helps Task Response scoring)</label>
+  <input id="prompt" placeholder="e.g. Some people believe university education should be free. Discuss both views and give your opinion.">
+  <label>Your essay</label>
+  <textarea id="essay" placeholder="Paste or write your essay here (Task 2: at least 250 words; Task 1: at least 150 words)…"></textarea>
+  <p class="small"><span id="wc">0</span> words · <span id="pc">0</span> paragraphs · <span id="checksLeft"></span></p>
+  <button class="btn" onclick="gradeEssay()">Grade my essay</button>
+  <button class="btn ghost" onclick="document.getElementById('essay').value='';updateCounts()">Clear</button>
+
+  <div id="result" class="hidden">
+    <hr style="margin:22px 0;border-color:var(--line)">
+    <div class="scorebig">Estimated Band <span id="bandBig">–</span></div>
+    <p class="center small" id="bandRange"></p>
+    <div id="crits"></div>
+    <p class="center small" id="graderSource"></p>
+    <div id="emailGate" class="gate hidden">
+      <b>📧 Your full report is ready — where should we send it?</b>
+      <p class="small" style="margin:4px 0">Enter your email to unlock your top mistakes, the higher-band rewrite and your next action — plus your Day 1 fix by email. No spam, unsubscribe any time.</p>
+      <input id="leadEmail" type="email" placeholder="you@example.com" autocomplete="email">
+      <button class="btn" onclick="unlockReport()">Unlock my full report →</button>
+    </div>
+    <div id="fullReport">
+    <h3>Your top mistakes — fix these first</h3>
+    <div id="mistakes"></div>
+    <h3>One paragraph, rewritten at a higher band</h3>
+    <div class="rewrite" id="rewrite"></div>
+    </div>
+    <div class="good"><b>Next step:</b> don't just read the rewrite — close it, rewrite the paragraph yourself, then re-check. That loop is how bands actually move. Then <a href="#plan">get your 30-day plan ↓</a></div>
+    <p class="small">How this works: when the ExamCoach AI grader is connected, your essay is scored by an AI examiner-assessor against the 4 public band descriptors, with a second verification pass — the report above says which grader produced it. If the AI grader is unavailable, a transparent rule-based estimator in your browser (word count &amp; task completion, paragraphing &amp; linking, vocabulary range, sentence variety, detected error patterns) produces the estimate instead, and says so. Scores are practice estimates, never official results.</p>
+  </div>
+</section>
+
+<!-- ============ DIAGNOSTIC ============ -->
+<section class="card" id="diagnostic">
+  <h2>Minute Diagnostic — find your weak skills</h2>
+  <p class="small">10 questions across grammar, vocabulary, reading and listening logic. At the end you get a weakness map that feeds your study plan.</p>
+  <div id="quiz"></div>
+  <button class="btn" onclick="scoreQuiz()">See my weakness map</button>
+  <div id="quizResult"></div>
+</section>
+
+<!-- ============ PLAN ============ -->
+<section class="card" id="plan">
+  <h2>Your personal study plan</h2>
+  <div class="grid">
+    <div><label>Current estimated band</label><input id="curBand" type="number" step="0.5" min="3" max="9" value="6.0"></div>
+    <div><label>Target band</label><input id="tgtBand" type="number" step="0.5" min="3" max="9" value="7.0"></div>
+    <div><label>Exam date</label><input id="examDate" type="date"></div>
+    <div><label>Hours per day</label><select id="hrsDay"><option>0.5</option><option selected>0.75</option><option>1</option><option>1.5</option><option>2</option></select></div>
+    <div><label>Weakest skill</label><select id="weak1"><option>Writing</option><option>Speaking</option><option>Reading</option><option>Listening</option></select></div>
+    <div><label>Second weakest</label><select id="weak2"><option>Speaking</option><option>Writing</option><option>Reading</option><option>Listening</option></select></div>
+  </div>
+  <br><button class="btn" onclick="makePlan()">Build my plan</button>
+  <div id="planOut"></div>
+</section>
+
+<!-- ============ SPEAKING ============ -->
+<section class="card" id="speaking">
+  <h2>Speaking practice</h2>
+  <p class="small">Pick a prompt, prepare for 1 minute (Part 2), then speak. If your browser supports speech recognition, tap “Record &amp; transcribe” and we'll analyse fluency fillers, pace and vocabulary. Otherwise, type what you said.</p>
+  <label>Prompt</label><select id="spkPrompt"></select>
+  <button class="btn small gold" onclick="newCue()">Random cue card</button>
+  <button class="btn small" id="recBtn" onclick="startRec()">Record &amp; transcribe</button>
+  <span class="small" id="recStatus"></span>
+  <label>Your answer (transcript)</label><textarea id="transcript" style="min-height:110px" placeholder="Your spoken answer will appear here…"></textarea>
+  <button class="btn" onclick="gradeSpeaking()">Analyse my speaking</button>
+  <div id="spkOut"></div>
+</section>
+
+<!-- ============ DRILLS ============ -->
+<section class="card" id="drills">
+  <h2>Reading drill — True / False / Not Given</h2>
+  <p><b>Passage (original practice material):</b> Cities are planting more trees, and the reasons go beyond beauty. A mature street tree can lower the air temperature around it by several degrees through shade and evaporation, which reduces the energy homes need for cooling. Studies in several countries have linked greener neighbourhoods with lower rates of anxiety, partly because green spaces encourage walking and casual social contact. However, trees are not a cheap solution. Young trees need watering for their first three years, and in dry cities up to a third may die before they are established. Roots can also damage pavements if the wrong species is planted in a narrow street. For these reasons, researchers argue that planting programmes succeed only when maintenance budgets are protected for at least a decade — a condition that election cycles rarely guarantee.</p>
+  <div id="readingQ"></div>
+  <button class="btn" onclick="scoreReading()">Check answers</button>
+  <div id="readOut"></div>
+</section>
+
+<!-- ============ QUESTION BANK ============ -->
+<section class="card" id="bank">
+  <h2>Question bank (starter set)</h2>
+  <div class="grid">
+    <div><label>Filter</label><select id="bankFilter" onchange="renderBank()"><option value="all">All</option><option value="t2">Task 2 prompts</option><option value="t1">Task 1 prompts</option><option value="cue">Speaking cue cards</option><option value="vocab">Band 7+ vocabulary</option></select></div>
+  </div>
+  <div id="bankOut"></div>
+  <p class="small">Starter set shown. Full bank in the build plan: 300 Task 2 prompts, 60 Task 1, 150 cue cards — all original or licensed, never copied past papers.</p>
+</section>
+
+<!-- ============ DASHBOARD ============ -->
+<section class="card" id="dashboard">
+  <h2>My progress (saved on this device)</h2>
+  <div class="kpi">
+    <div><b id="kAttempts">0</b>essays checked</div>
+    <div><b id="kLatest">–</b>latest band</div>
+    <div><b id="kBest">–</b>best band</div>
+    <div><b id="kStreak">0</b>days practised</div>
+  </div>
+  <br><canvas id="trend" role="img" aria-label="Chart of your recent essay band scores" width="980" height="220"></canvas>
+  <div id="hist"></div>
+  <button class="btn ghost small" onclick="downloadLeads()">Download captured emails (this device)</button>
+  <button class="btn ghost small" onclick="if(confirm('Clear saved progress on this device?')){lsDel('ec_history');renderDash()}">Clear my data</button>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing">
+  <h2 class="center">Pricing — fair for students everywhere</h2>
+  <div class="grid">
+    <div class="price"><h3>Free</h3><div class="amt">$0</div><p>2 writing checks / day<br>Sample diagnostic<br>Starter question bank</p><button class="btn ghost" onclick="location.hash='#checker'">Start free</button></div>
+    <div class="price"><h3>Monthly Pro</h3><div class="amt">$12</div><p class="small">Lower local prices in many regions (about 40–60% of base)</p><p>Unlimited writing feedback<br>Full diagnostic + plan<br>Speaking practice<br>All drills + mocks</p><button class="btn" onclick="notify('Pro opens at launch. Use the free checker meanwhile.')">Go Pro</button></div>
+    <div class="price hot"><h3>6-Month Pass <span class="pill">Best value</span></h3><div class="amt">$60</div><p>Everything in Pro for 6 months<br>Covers a full exam cycle<br>Monthly full mock test<br>Priority feedback</p><button class="btn gold" onclick="notify('The 6-month pass opens at launch. Use the free checker meanwhile.')">Get the pass</button></div>
+    <div class="price"><h3>Tutor Plan</h3><div class="amt">$49<span class="small">/mo</span></div><p>Up to 25 student seats<br>Student progress view<br>White-label reports<br>25% referral commission</p><button class="btn ghost" onclick="notify('The tutor program opens at launch.')">For tutors &amp; academies</button></div>
+  </div>
+  <p class="center small">7-day money-back guarantee · Cards worldwide plus local payment methods, handled through a merchant-of-record provider (such as Paddle or Lemon Squeezy) that manages VAT and sales tax · JobPilot add-on ($9/mo) for graduates: CV tailoring, cover letters and an application tracker, coming in Month 3.</p>
+</section>
+
+<section class="card">
+  <h2>How it works</h2>
+  <div class="grid">
+    <div><h3>1 · Check</h3><p>Paste an essay, get a criterion-by-criterion estimate and your top 3 mistakes.</p></div>
+    <div><h3>2 · Plan</h3><p>A daily 30–45 minute plan built from your weakness map, target band and exam date — re-planned every week.</p></div>
+    <div><h3>3 · Improve</h3><p>Rewrite loop, speaking practice, timed drills and a monthly mock. Watch your band trend climb.</p></div>
+  </div>
+</section>
+</div>
+
+<footer>
+  <b>ExamCoach</b> — IELTS preparation that finds your weak spots.<br>
+  Disclaimer: ExamCoach is not affiliated with IELTS, the British Council, IDP or Cambridge Assessment English. All scores are practice estimates, never guaranteed or official results. Practice material on this site is original.<br>
+  Your essays and progress on this demo are stored only in your browser on this device. You can clear them any time from My Progress.
+</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+const $=id=>document.getElementById(id);
+const lsGet=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}};
+const lsDel=k=>{try{localStorage.removeItem(k)}catch(e){}};
+function notify(m){const t=$('toast');t.textContent=m;t.classList.add('show');clearTimeout(notify.t);notify.t=setTimeout(()=>t.classList.remove('show'),4500);}
+const LINK=["furthermore","moreover","in addition","however","on the other hand","in contrast","therefore","consequently","as a result","for example","for instance","in conclusion","to conclude","firstly","secondly","finally","nevertheless","in fact","indeed","overall","in summary","whereas","although","despite","in spite of","as a consequence","this suggests","it is clear that"];
+const ACAD=["significant","evidence","benefit","consequently","approximately","proportion","tendency","contribute","essential","particularly","environment","government","individual","society","economic","development","increase","decrease","analysis","approach","available","community","concept","create","data","define","economy","establish","factor","indicate","interpret","involve","method","occur","percent","policy","principle","process","require","research","respond","sector","source","specific","structure","theory","vary","achieve","acquire","aspect","assess","assist","category","complex","conclude","conduct","consume","credit","culture","design","distinct","element","evaluate","feature","focus","impact","income","instance","invest","item","journal","maintain","normal","obtain","participate","perceive","positive","potential","previous","primary","purchase","range","region","regulate","relevant","reside","resource","restrict","secure","seek","select","site","strategy","survey","text","tradition","transfer","transport","trend","version","welfare","whereas","enable","dramatic","crucial","vital","gradual","rapid","decline","rise","fluctuate","peak","remain","stable","illustrate","compare","contrast","depict","represent","account for"];
+const INFORMAL={"a lot of":"many","lots of":"many","kids":"children","stuff":"material","got":"obtained","big":"significant","huge":"substantial","really":"genuinely","i think":"in my opinion","you can see":"it can be seen","cheap":"inexpensive","nowadays":"in contemporary society","gonna":"going to","wanna":"want to"};
+const COMMON_ERR=["informations","advices","peoples","childrens","sceneries","furnitures","luggages","homeworks","researches","equipments","many money","much people","discuss about","depend of","in nowadays","more better","most easiest","did not went","does not has","i am agree","according to me","in my point of view is","the life is","an university","a hour","since three years i","married with","explain about","request for"];
+const MISSP=["goverment","enviroment","seperate","occured","definately","arguement","benifit","developement","educaiton","recieve","adress","writen","langauge","grammer","vocabular","improveing","tecnology","socities","becouse","thier","wich","withing","peopel","studing","importent","diffrent","opinionn","essayy"];
+
+const SAMPLES={
+b6:{prompt:"Some people believe that university education should be free for all students. Discuss both views and give your own opinion.",text:"Nowadays, many people think university education should be free. Others think students should pay for it. This essay will discuss both sides and give my opinion.\n\nOn the one hand, free education is good because poor students can study. Many talented kids cannot go to university because it is very expensive. If education is free, more people will get good jobs and society will develop. Also, educated people pay more tax in future, so goverment will get money back.\n\nOn the other hand, if university is free, goverment must pay a lot of money. This money comes from taxes, and taxes will increase for everyone. Also, some students will not study hard because they did not pay anything. In my point of view is, free education can make students lazy.\n\nIn conclusion, I think education should not be fully free, but goverment should give help to poor students. This is a good solution for both sides."},
+b75:{prompt:"Some people believe that university education should be free for all students. Discuss both views and give your own opinion.",text:"Whether university education should be provided free of charge is a question that divides opinion. While some argue that tuition fees exclude talented students from poorer backgrounds, others contend that graduates should contribute to the cost of a qualification that substantially raises their lifetime earnings. This essay examines both perspectives before concluding that a system of subsidised fees, combined with targeted grants, represents the most equitable approach.\n\nAdvocates of free tuition point, first, to equality of opportunity. When fees rise above a certain threshold, able students from low-income families are deterred from applying, and the proportion of undergraduates from disadvantaged backgrounds declines. Furthermore, a highly educated workforce benefits society as a whole: graduates tend to be healthier, more civically engaged, and more productive, which consequently raises tax revenues over the long term.\n\nNevertheless, entirely free provision carries significant drawbacks. Universities are expensive institutions to operate, and funding them wholly from general taxation means that citizens who never attend university subsidise those who do — a transfer that is arguably regressive, since graduates typically out-earn non-graduates. In addition, evidence suggests that when students contribute financially, they are more likely to complete their degrees, presumably because they perceive a direct cost to failure.\n\nIn conclusion, although free university education is attractive in principle, it is neither financially sustainable nor entirely fair in practice. A more balanced model, in which fees are kept moderate and means-tested support protects the poorest applicants, preserves access without placing an unsustainable burden on the taxpayer."}};
+
+$('sampleLoad').addEventListener('change',e=>{const s=SAMPLES[e.target.value];if(s){$('prompt').value=s.prompt;$('essay').value=s.text;updateCounts();}});
+function counts(t){const w=(t.trim().match(/\S+/g)||[]);return{words:w.length,paras:t.split(/\n\s*\n/).filter(x=>x.trim()).length,sents:(t.match(/[^.!?]+[.!?]+/g)||[])}}
+function updateCounts(){const c=counts($('essay').value);$('wc').textContent=c.words;$('pc').textContent=c.paras;}
+$('essay').addEventListener('input',updateCounts);
+
+function checksLeftMsg(){let d=JSON.parse(lsGet('ec_checks')||'{}');let today=new Date().toDateString();let n=(d.date===today)?d.n:0;$('checksLeft').textContent='Free checks used today: '+n+' of 2';}
+checksLeftMsg();
+
+function gradeEssayRules(){
+  {const d0=JSON.parse(lsGet('ec_checks')||'{}');if(d0.date===new Date().toDateString()&&d0.n>=2){notify('You have used your 2 free checks for today. Come back tomorrow or go Pro for unlimited checks.');location.hash='#pricing';return;}}
+  const task=$('taskType').value, raw=$('essay').value, text=raw.trim(), low=' '+text.toLowerCase()+' ';
+  if(text.length<80){notify('Please paste a longer essay first (or load a sample).');return;}
+  const c=counts(text), words=c.words, sents=c.sents.map(s=>s.trim()).filter(Boolean);
+  const avgSentLen=words/Math.max(1,sents.length);
+  const lens=sents.map(s=>(s.match(/\S+/g)||[]).length);
+  const sd=Math.sqrt(lens.reduce((a,l)=>a+Math.pow(l-avgSentLen,2),0)/Math.max(1,lens.length));
+  const uniq=new Set(text.toLowerCase().match(/[a-z']+/g)||[]).size;
+  const ttr=uniq/Math.max(1,words);
+  const linkHits=LINK.filter(l=>low.includes(l)); const linkCount=linkHits.length;
+  const acadHits=ACAD.filter(a=>new RegExp('\\b'+a+'\\b').test(low));
+  const informalFound=Object.keys(INFORMAL).filter(k=>low.includes(' '+k+' ')||low.startsWith(k+' '));
+  const errFound=COMMON_ERR.filter(e=>low.includes(e));
+  const spellFound=MISSP.filter(m=>new RegExp('\\b'+m+'\\b').test(low));
+  const repeats=(text.toLowerCase().match(/\b(\w+)\s+\1\b/g)||[]);
+  const contractions=(text.match(/\b\w+(n't|'re|'ve|'ll|'m|'d)\b/g)||[]).length;
+  const complex=sents.filter(s=>/\b(although|because|which|that|when|while|if|whereas|who|whose|despite|however)\b/i.test(s)).length;
+  const complexRatio=sents.length?complex/sents.length:0;
+  const minWords=(task==='2')?250:150;
+  // --- criterion models (mapped to public descriptors, clamped, half-band steps)
+  const half=x=>Math.max(3.5,Math.min(9,Math.round(x*2)/2));
+  let TR=5.2 + (words>=minWords?0.9:(words>=minWords*0.7?0.3:-0.8)) + (c.paras>=3?0.4:-0.3) + (/in conclusion|to conclude|in summary/.test(low)?0.3:0) + (/discuss|opinion|view/.test(($('prompt').value+' '+text).toLowerCase())?0.2:0) - (errFound.includes('in my point of view is')?0.3:0);
+  let CC=5.0 + Math.min(0.9,linkCount*0.12) + (c.paras===4||c.paras===5?0.7:(c.paras>=3?0.3:-0.6)) + (words>=minWords?0.3:0);
+  let LR=5.0 + (ttr>0.52?0.9:(ttr>0.45?0.5:(ttr>0.38?0.1:-0.4))) + Math.min(0.8,acadHits.length*0.06) - Math.min(0.7,informalFound.length*0.18) - Math.min(0.5,spellFound.length*0.15);
+  let GRA=5.0 + (sd>6?0.6:(sd>4?0.3:-0.2)) + (complexRatio>0.55?0.7:(complexRatio>0.4?0.4:0)) + (avgSentLen>=14&&avgSentLen<=26?0.3:-0.2) - Math.min(1.0,errFound.length*0.22+spellFound.length*0.12+repeats.length*0.2+contractions*0.05);
+  TR=half(TR);CC=half(CC);LR=half(LR);GRA=half(GRA);
+  const overall=half((TR+CC+LR+GRA)/4);
+  $('bandBig').textContent=overall.toFixed(1);
+  $('bandRange').textContent='Realistic range: '+Math.max(3,overall-0.5).toFixed(1)+' – '+Math.min(9,overall+0.5).toFixed(1)+' · Task '+(task==='2'?'2':task==='1a'?'1 Academic':'1 General')+' · '+words+' words · '+sents.length+' sentences';
+  const rows=[['Task '+(task==='2'?'Response':'Achievement'),TR],['Coherence & Cohesion',CC],['Lexical Resource',LR],['Grammar Range & Accuracy',GRA]];
+  $('crits').innerHTML=rows.map(r=>'<div class="crit"><span>'+r[0]+'</span><div class="bar"><i style="width:'+(r[1]/9*100)+'%"></i></div><b>'+r[1].toFixed(1)+'</b></div>').join('');
+  // mistakes, dynamic & prioritised
+  let M=[];
+  if(words<minWords)M.push(['Too short: '+words+' words (minimum '+minWords+')','Under-length answers cap Task Response/Achievement. Add a developed example to each main point instead of new, thin points.']);
+  if(c.paras<4)M.push(['Paragraphing: only '+c.paras+' paragraph(s)','Use 4–5 paragraphs: introduction, two body paragraphs, conclusion. One clear central idea per body paragraph.']);
+  if(linkCount<5)M.push(['Few linking devices ('+linkCount+' different ones found)','Add a wider range, used accurately: Furthermore, In contrast, Consequently, For instance — not just “Also” and “But” at sentence starts.']);
+  if(informalFound.length)M.push(['Informal wording: '+informalFound.slice(0,4).map(x=>'"'+x+'"').join(', '),'Replace with academic equivalents: '+informalFound.slice(0,3).map(k=>'"'+k+'" → "'+INFORMAL[k]+'"').join(' · ')]);
+  if(errFound.length)M.push(['Repeated grammar patterns: '+errFound.slice(0,3).join(' · '),'These are examiner-visible errors. Learn the corrected forms and check for them in your final 3 minutes.']);
+  if(spellFound.length)M.push(['Spelling: '+spellFound.slice(0,4).join(', '),'Misspelt common academic words cost Lexical Resource marks even when meaning is clear. Keep a personal spelling list.']);
+  if(repeats.length)M.push(['Repeated words typed twice in a row ('+repeats.length+')','Proofread the final version aloud — repetition errors signal no checking time was left.']);
+  if(complexRatio<0.4)M.push(['Mostly simple sentences ('+Math.round(complexRatio*100)+'% complex)','Upgrade 2–3 sentences per paragraph with although / because / which clauses to lift Grammatical Range.']);
+  if(ttr<0.42)M.push(['Limited vocabulary range (low word variety)','Paraphrase the prompt in your introduction and avoid repeating the same nouns — use synonyms and topic vocabulary.']);
+  if(contractions>=3)M.push(['Contractions used '+contractions+' times','Formal IELTS writing: write “do not / it is” in full.']);
+  if(!M.length)M.push(['No major pattern errors detected','Push higher by widening collocations and adding one precisely-used less-common phrase per paragraph — accuracy first.']);
+  $('mistakes').innerHTML=M.slice(0,3).map((m,i)=>'<div class="mistake"><b>'+(i+1)+'. '+m[0]+'</b><br>'+m[1]+'</div>').join('')+(M.length>3?'<p class="small">+ '+(M.length-3)+' further issue(s) in the full Pro report.</p>':'');
+  // rewrite first paragraph
+  const SAFE={"kids":"children","nowadays":"in contemporary society","got":"obtained"};
+  let first=text.split(/\n\s*\n/)[0].split(/(?<=[.!?])\s+/).slice(0,3).join(' ');
+  let rw=first,swaps=[];Object.keys(SAFE).forEach(k=>{const re=new RegExp('\\b'+k+'\\b','gi');if(re.test(rw)){swaps.push('"'+k+'" → "'+SAFE[k]+'"');rw=rw.replace(re,SAFE[k]);}});
+  rw=rw.replace(/(^|[.!?]\s+)([a-z])/g,(m,a,b)=>a+b.toUpperCase());
+  $('rewrite').textContent=(swaps.length?'Your opening with safe vocabulary upgrades ('+swaps.join(', ')+'):\n\n'+rw:'No safe automatic upgrades found in your opening. Rewrite it yourself using the model below.')+'\n\nModel structure for an opening: (1) paraphrase the question in your own words, never copying it, (2) state your position clearly, (3) preview your two main points. This protects Task Response and Coherence.';
+  // save history + local free-limit counter
+  let d=JSON.parse(lsGet('ec_checks')||'{}');let today=new Date().toDateString();d={date:today,n:(d.date===today?d.n:0)+1};lsSet('ec_checks',JSON.stringify(d));checksLeftMsg();
+  let h=JSON.parse(lsGet('ec_history')||'[]');h.push({date:new Date().toISOString().slice(0,10),band:overall,tr:TR,cc:CC,lr:LR,gra:GRA});lsSet('ec_history',JSON.stringify(h));renderDash();
+  $('graderSource').textContent='Graded by the in-browser rule-based estimator — the AI grader is not connected or was unavailable for this check.';
+  showResult();
+}
+
+// ---- AI grader + email capture (wired 2026-10-24) ----
+// When the page is hosted separately from the backend, set these to the backend's full URLs.
+const EC_CONFIG={gradeEndpoint:'/api/grade',subscribeEndpoint:'/api/subscribe'};
+function showResult(){$('result').classList.remove('hidden');applyGate();$('result').scrollIntoView({behavior:'smooth'});}
+function applyGate(){const has=!!lsGet('ec_lead');$('emailGate').classList.toggle('hidden',has);$('fullReport').classList.toggle('locked',!has);}
+async function unlockReport(){
+  const email=($('leadEmail').value||'').trim();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){notify('Please enter a valid email address.');return;}
+  lsSet('ec_lead',email);
+  let leads=[];try{leads=JSON.parse(lsGet('ec_leads')||'[]')}catch(e){}
+  if(!leads.some(l=>l.email===email)){leads.push({email:email,date:new Date().toISOString().slice(0,10),source:'checker-gate'});lsSet('ec_leads',JSON.stringify(leads));}
+  try{await fetch(EC_CONFIG.subscribeEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:email,source:'checker-gate'})});}catch(e){/* lead is kept on this device if the backend is unreachable */}
+  applyGate();notify('Full report unlocked. Your Day 1 fix will follow by email.');
+}
+function downloadLeads(){
+  let leads=[];try{leads=JSON.parse(lsGet('ec_leads')||'[]')}catch(e){}
+  if(!leads.length){notify('No emails captured on this device yet.');return;}
+  const csv='date,email,source\n'+leads.map(l=>[l.date,l.email,l.source].map(v=>'"'+String(v||'').replace(/"/g,'""')+'"').join(',')).join('\n');
+  const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='examcoach-leads.csv';a.click();URL.revokeObjectURL(a.href);
+}
+function renderAI(g,task){
+  const TR=+g.task_response,CC=+g.coherence_cohesion,LR=+g.lexical_resource,GRA=+g.grammatical_range_accuracy,overall=+g.overall||Math.round(((TR+CC+LR+GRA)/4)*2)/2;
+  $('bandBig').textContent=overall.toFixed(1);
+  $('bandRange').textContent='Realistic range: '+Math.max(3,overall-0.5).toFixed(1)+' – '+Math.min(9,overall+0.5).toFixed(1)+' · Task '+(task==='2'?'2':task==='1a'?'1 Academic':'1 General');
+  const rows=[['Task '+(task==='2'?'Response':'Achievement'),TR],['Coherence & Cohesion',CC],['Lexical Resource',LR],['Grammar Range & Accuracy',GRA]];
+  const ev=g.evidence||{};
+  $('crits').innerHTML=rows.map(r=>'<div class="crit"><span>'+r[0]+'</span><div class="bar"><i style="width:'+(r[1]/9*100)+'%"></i></div><b>'+r[1].toFixed(1)+'</b></div>').join('')+(ev.task_response?'<p class="small">Evidence from your essay — Task: “'+ev.task_response+'” · Cohesion: “'+(ev.coherence_cohesion||'')+'” · Vocabulary: “'+(ev.lexical_resource||'')+'” · Grammar: “'+(ev.grammatical_range_accuracy||'')+'”</p>':'');
+  $('mistakes').innerHTML=(g.top_mistakes||[]).map((m,i)=>'<div class="mistake"><b>'+(i+1)+'. “'+m.quote+'”</b><br>'+m.problem+'<br><b>Fix:</b> '+m.fix+'</div>').join('')||'<div class="mistake">No major mistakes were returned for this essay.</div>';
+  $('rewrite').textContent=(g.rewritten_paragraph||'')+(g.one_next_action?'\n\nYour one next action: '+g.one_next_action:'');
+  $('graderSource').textContent='Graded by the ExamCoach AI grader ('+(g.model||'AI')+', '+(g.passes||1)+' pass'+((g.passes||1)>1?'es':'')+') against the public IELTS band descriptors.';
+  let d=JSON.parse(lsGet('ec_checks')||'{}');let today=new Date().toDateString();d={date:today,n:(d.date===today?d.n:0)+1};lsSet('ec_checks',JSON.stringify(d));checksLeftMsg();
+  let h=JSON.parse(lsGet('ec_history')||'[]');h.push({date:new Date().toISOString().slice(0,10),band:overall,tr:TR,cc:CC,lr:LR,gra:GRA});lsSet('ec_history',JSON.stringify(h));renderDash();
+  showResult();
+}
+async function gradeEssay(){
+  const text=$('essay').value.trim();
+  if(text.length<80){notify('Please paste a longer essay first (or load a sample).');return;}
+  const d0=JSON.parse(lsGet('ec_checks')||'{}');
+  if(d0.date===new Date().toDateString()&&d0.n>=2){notify('You have used your 2 free checks for today. Come back tomorrow or go Pro for unlimited checks.');location.hash='#pricing';return;}
+  notify('Grading with the AI examiner…');
+  try{
+    const ctl=new AbortController();const timer=setTimeout(()=>ctl.abort(),30000);
+    const res=await fetch(EC_CONFIG.gradeEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},signal:ctl.signal,body:JSON.stringify({taskType:$('taskType').value,prompt:$('prompt').value,essay:text,email:lsGet('ec_lead')||''})});
+    clearTimeout(timer);
+    if(res.status===429){notify('Free AI checks for today are used up on this connection. Come back tomorrow or go Pro.');return;}
+    if(!res.ok)throw new Error('grade_http_'+res.status);
+    const g=await res.json();
+    if(g.source!=='ai')throw new Error('not_ai');
+    renderAI(g,$('taskType').value);
+  }catch(e){ gradeEssayRules(); }
+}
+
+// ---- Diagnostic ----
+const QUIZ=[
+{q:'Choose the correct sentence:',o:['Although it was raining, but we went out.','Although it was raining, we went out.','Although it was raining, however we went out.'],a:1,skill:'Grammar'},
+{q:'“The chart shows a dramatic rise” — “dramatic” here means:',o:['theatrical','very large and sudden','slow and steady'],a:1,skill:'Vocabulary'},
+{q:'Choose the correct form: “By 2030, the population ___ doubled.”',o:['will have','will has','would had'],a:0,skill:'Grammar'},
+{q:'Reading logic: a statement is NOT GIVEN when…',o:['the passage says the opposite','the passage never mentions that information','the passage confirms it in other words'],a:1,skill:'Reading'},
+{q:'Best paraphrase of “Education should be free”:',o:['Schooling ought to be provided without charge','Education should be free for education','Free education is education that is free'],a:0,skill:'Vocabulary'},
+{q:'Choose the correct sentence:',o:['The number of students are increasing.','The number of students is increasing.','The number of students be increasing.'],a:1,skill:'Grammar'},
+{q:'Listening logic: distractors in IELTS Listening usually…',o:['are never spoken','repeat words from the question but change a key detail','always come at the end'],a:1,skill:'Listening'},
+{q:'“Account for” in Task 1 means:',o:['explain / make up a proportion of','open a bank account','count money'],a:0,skill:'Vocabulary'},
+{q:'Choose the best linking phrase: “___ the high cost, many students still study abroad.”',o:['Despite','Because','Moreover'],a:0,skill:'Grammar'},
+{q:'Reading: “matching headings” is fastest when you…',o:['read every word first','skim each paragraph for its main idea and match, leaving hard ones for last','translate the passage'],a:1,skill:'Reading'}];
+$('quiz').innerHTML=QUIZ.map((x,i)=>'<div class="q"><b>Q'+(i+1)+' · '+x.skill+':</b> '+x.q+x.o.map((o,j)=>'<button class="opt" data-q="'+i+'" data-o="'+j+'" onclick="pick(this)">'+o+'</button>').join('')+'</div>').join('');
+let picks={};function pick(b){picks[b.dataset.q]=+b.dataset.o;[...b.parentNode.querySelectorAll('.opt')].forEach(x=>x.style.outline='');b.style.outline='3px solid #2b50d6';}
+function scoreQuiz(){const left=QUIZ.length-Object.keys(picks).length;if(left>0){notify('Answer all 10 questions first. '+left+' left.');return;}let by={};QUIZ.forEach((x,i)=>{by[x.skill]=by[x.skill]||{r:0,t:0};by[x.skill].t++;if(picks[i]===x.a)by[x.skill].r++;document.querySelectorAll('[data-q="'+i+'"]').forEach(b=>{b.classList.toggle('right',+b.dataset.o===x.a);if(+b.dataset.o===picks[i]&&picks[i]!==x.a)b.classList.add('wrong');});});
+let weak=Object.entries(by).sort((a,b)=>(a[1].r/a[1].t)-(b[1].r/b[1].t));let tot=QUIZ.filter((x,i)=>picks[i]===x.a).length;
+$('quizResult').innerHTML='<div class="good"><b>Score: '+tot+'/10.</b> Weakness map: '+Object.entries(by).map(e=>e[0]+' '+e[1].r+'/'+e[1].t).join(' · ')+'<br>Weakest first: <b>'+weak.map(e=>e[0]).join(' → ')+'</b>. We have filled in your weakest skills in the plan below.</div>';
+const mp=x=>(x==='Grammar'||x==='Vocabulary')?'Writing':x;const a1=mp(weak[0][0]);const a2=weak.map(e=>mp(e[0])).find(x=>x!==a1)||(a1==='Speaking'?'Writing':'Speaking');$('weak1').value=a1;$('weak2').value=a2;}
+
+// ---- Plan ----
+function makePlan(){const cur=parseFloat($('curBand').value),tgt=parseFloat($('tgtBand').value),hrs=parseFloat($('hrsDay').value),w1=$('weak1').value,w2=$('weak2').value;
+if(w1===w2){notify('Pick two different weakest skills.');return;}
+if(isNaN(cur)||isNaN(tgt)||!(tgt>cur)){notify('Your target band must be higher than your current band.');return;}
+let exam=$('examDate').value?new Date($('examDate').value):null;let days=exam?Math.max(7,Math.round((exam-new Date())/864e5)):30;
+const acts={Writing:['Timed Task 2 (40 min) + check + rewrite loop','Task 1: describe 2 charts, learn overview sentence','Criterion focus: fix ONE weakness from your last report','Vocabulary upgrade: rewrite 5 sentences at Band 7+','Full essay, examiner self-check with descriptors'],Speaking:['Part 2 cue card: 1 min prep, 2 min talk, record & review','Part 1 fluency set: 10 short answers, no pausing','Part 3 discussion: give opinion + reason + example','Shadowing: copy a Band 8 sample answer aloud','Pronunciation: record & fix 5 mispronounced words'],Reading:['Timed passage: TFNG set + error log','Matching headings drill (skimming)','One full section under time, review every wrong answer','Learn 15 topic words from today’s passage','Re-do last week’s wrong questions from memory'],Listening:['One section, dictation of missed sentences','Map/plan labelling drill','Full section under time + transcript study','Spelling of answers: names, numbers, plurals','Re-listen at 1.25× for stamina']};
+let html='<h3>Your next 7 days — '+(hrs*60)+' min/day · 50% on '+w1+' & '+w2+', 30% on other skills, 20% mock/review</h3><table><tr><th>Day</th><th>Main session ('+Math.round(hrs*30)+' min)</th><th>Second session ('+Math.round(hrs*30)+' min)</th></tr>';
+for(let d=0;d<7;d++){let main=(d%2===0)?w1:w2;let other=['Writing','Speaking','Reading','Listening'].filter(s=>s!==main)[d%3];html+='<tr><td>Day '+(d+1)+'</td><td><b>'+main+':</b> '+acts[main][d%5]+'</td><td><b>'+other+':</b> '+acts[other][(d+2)%5]+'</td></tr>';}
+html+='</table><p><b>Gap:</b> Band '+cur.toFixed(1)+' → '+tgt.toFixed(1)+' in ~'+days+' days. Rule of thumb: +0.5 band ≈ 6–8 weeks of focused daily practice — '+(days<40&&tgt-cur>=1?'your timeline is tight: protect the daily session and prioritise the rewrite loop over new theory.':'your timeline is realistic if the daily session holds.')+'</p><p class="small">Every Sunday: re-check one essay + one speaking set, compare bands, and re-plan. That weekly re-plan is built into ExamCoach Pro.</p>';
+$('planOut').innerHTML=html;}
+
+// ---- Speaking ----
+const CUES=['Describe a skill you would like to learn. You should say: what it is, how you would learn it, how long it would take, and explain why you want to learn it.','Describe a place you visited that you liked. You should say: where it was, who you went with, what you did, and explain why you liked it.','Describe a person who has influenced you. You should say: who they are, how you know them, what they did, and explain their influence on you.','Describe an important decision you made. You should say: what it was, when you made it, who helped you, and explain why it was important.','Describe a book or film you enjoyed. You should say: what it was, when you saw/read it, what it was about, and explain why you enjoyed it.'];
+let part1=['What do you do — work or study?','Do you enjoy your job / subject? Why?','What is your hometown like?','How often do you use the internet?','What kind of music do you like?'];
+$('spkPrompt').innerHTML='<optgroup label="Part 2 cue cards">'+CUES.map(c=>'<option>'+c+'</option>').join('')+'</optgroup><optgroup label="Part 1">'+part1.map(c=>'<option>'+c+'</option>').join('')+'</optgroup>';
+function newCue(){$('spkPrompt').value=CUES[Math.floor(Math.random()*CUES.length)];}
+let recog=null,recOn=false;function startRec(){if(recOn&&recog){recog.stop();return;}const SR=window.SpeechRecognition||window.webkitSpeechRecognition;if(!SR){$('recStatus').textContent='Speech recognition is not supported in this browser. Type your answer instead.';return;}recog=new SR();recog.lang='en-GB';recog.continuous=true;recog.interimResults=false;recog.onresult=e=>{for(let i=e.resultIndex;i<e.results.length;i++){if(e.results[i].isFinal)$('transcript').value+=e.results[i][0].transcript+' ';}};recog.onerror=()=>{$('recStatus').textContent='Recording stopped or microphone access was blocked.';};recog.onend=()=>{recOn=false;$('recBtn').textContent='Record & transcribe';if(!/blocked/.test($('recStatus').textContent))$('recStatus').textContent='Recording finished.';};recog.start();recOn=true;$('recBtn').textContent='Stop recording';$('recStatus').textContent='Listening… speak now.';}
+function gradeSpeaking(){const t=$('transcript').value.trim();if(t.length<40){notify('Record or type a longer answer first.');return;}
+const words=(t.match(/\S+/g)||[]).length;const fillers=(t.toLowerCase().match(/\b(um|uh|you know|actually|basically)\b/g)||[]).length;const uniq=new Set(t.toLowerCase().match(/[a-z']+/g)||[]).size;const ttr=uniq/Math.max(1,words);
+let flu=fillers<=2?7.0:(fillers<=5?6.5:5.5);let lex=ttr>0.5?7.0:(ttr>0.42?6.5:5.5);let est=((flu+lex)/2);
+$('spkOut').innerHTML='<div class="good"><b>Speaking estimate: Band '+(est-0.5).toFixed(1)+'–'+est.toFixed(1)+'</b> · '+words+' words · fillers: '+fillers+' · vocabulary variety: '+Math.round(ttr*100)+'%<br>'+(fillers>4?'Reduce fillers: pause silently instead of “um/like” — examiners reward calm pausing. ':'Fluency fillers are under control. ')+(ttr<0.45?'Widen vocabulary: prepare 5 topic phrases for this cue card and re-record.':'Good lexical variety for this topic.')+'<br><span class="small">Pronunciation can only be estimated from audio by the full AI engine (Pro roadmap); this demo scores transcript fluency + vocabulary.</span></div>';}
+
+// ---- Reading ----
+const RQ=[{q:'Street trees can reduce how much energy homes use for cooling.',a:'True',why:'Passage: shade/evaporation “reduces the energy homes need for cooling.”'},{q:'Green spaces are linked to lower anxiety partly because they encourage walking.',a:'True',why:'Passage: green spaces “encourage walking and casual social contact.”'},{q:'Trees on narrow streets cost more to maintain than trees in parks.',a:'Not Given',why:'The passage mentions narrow streets only for root damage and never compares maintenance costs, so the answer is Not Given.'},{q:'Tree roots never damage pavements.',a:'False',why:'Passage: “Roots can also damage pavements if the wrong species is planted.”'},{q:'Researchers recommend protecting maintenance budgets for at least ten years.',a:'True',why:'Passage: programmes succeed only when “maintenance budgets are protected for at least a decade.”'}];
+$('readingQ').innerHTML=RQ.map((x,i)=>'<div class="q"><b>'+(i+1)+'.</b> '+x.q+'<br>'+['True','False','Not Given'].map(o=>'<button class="opt" data-rq="'+i+'" data-ro="'+o+'" onclick="rpick(this)">'+o+'</button>').join('')+'</div>').join('');
+let rp={};function rpick(b){rp[b.dataset.rq]=b.dataset.ro;[...b.parentNode.querySelectorAll('.opt')].forEach(x=>x.style.outline='');b.style.outline='3px solid #2b50d6';}
+function scoreReading(){let s=0;RQ.forEach((x,i)=>{if(rp[i]===x.a)s++;});$('readOut').innerHTML='<div class="good"><b>'+s+'/5.</b><br>'+RQ.map((x,i)=>'<b>'+(i+1)+'. '+x.a+'</b> — '+x.why).join('<br>')+'</div>';}
+
+// ---- Bank ----
+const BANK=[['t2','Some people think it is better to live in a small town. Others prefer a large city. Discuss both views and give your opinion.'],['t2','Technology has made our lives more complicated. To what extent do you agree or disagree?'],['t2','Many criminals re-offend after release. What are the reasons, and what measures can be taken?'],['t2','Children should learn to compete rather than cooperate. Do the advantages outweigh the disadvantages?'],['t1','The chart shows the percentage of households in owned and rented accommodation in England and Wales, 1918–2011. Summarise the information.'],['t1','The diagram shows how rainwater is collected and treated for household use. Summarise the information.'],['t1','(General) Write a letter to a friend inviting them to a celebration, explaining the occasion and arrangements.'],['cue','Describe a journey you did not enjoy.'],['cue','Describe a time you helped someone.'],['cue','Describe a piece of technology you find useful.'],['vocab','significant / substantial / considerable — for “big” changes in Task 1 & 2'],['vocab','rise gradually · decline sharply · fluctuate · peak at · remain stable · account for X%'],['vocab','a major advantage · a drawback · in the long term · it is widely believed that · evidence suggests that']];
+function renderBank(){const f=$('bankFilter').value;$('bankOut').innerHTML='<ul>'+BANK.filter(b=>f==='all'||b[0]===f).map(b=>'<li style="margin:7px 0"><span class="pill">'+({t2:'Task 2',t1:'Task 1',cue:'Cue card',vocab:'Vocab'})[b[0]]+'</span> '+b[1]+'</li>').join('')+'</ul>';}
+renderBank();
+
+// ---- Dashboard ----
+function renderDash(){let h=JSON.parse(lsGet('ec_history')||'[]');$('kAttempts').textContent=h.length;$('kLatest').textContent=h.length?h[h.length-1].band.toFixed(1):'–';$('kBest').textContent=h.length?Math.max(...h.map(x=>x.band)).toFixed(1):'–';$('kStreak').textContent=new Set(h.map(x=>x.date)).size;
+$('hist').innerHTML=h.length?'<p class="small">'+h.slice(-6).reverse().map(x=>x.date+': Band '+x.band.toFixed(1)+' (TR '+x.tr+' · CC '+x.cc+' · LR '+x.lr+' · GRA '+x.gra+')').join('<br>')+'</p>':'<p class="small">No essays checked yet — your trend will appear here.</p>';
+const cv=$('trend'),ctx=cv.getContext('2d');ctx.clearRect(0,0,cv.width,cv.height);ctx.strokeStyle='#d5dfdb';for(let b=4;b<=9;b++){let y=200-(b-3.5)/5.5*180;ctx.beginPath();ctx.moveTo(40,y);ctx.lineTo(960,y);ctx.stroke();ctx.fillStyle='#5c6b76';ctx.fillText(b.toFixed(0),10,y+4);}
+if(h.length){ctx.strokeStyle='#2b50d6';ctx.lineWidth=3;ctx.beginPath();h.slice(-14).forEach((x,i,a)=>{let px=50+i*(900/Math.max(1,a.length-1||1)),py=200-(x.band-3.5)/5.5*180;i?ctx.lineTo(px,py):ctx.moveTo(px,py);ctx.fillStyle='#14213d';ctx.beginPath();ctx.arc(px,py,4,0,7);ctx.fill();ctx.strokeStyle='#2b50d6';});ctx.stroke();}}
+document.querySelectorAll('label').forEach(l=>{const n=l.nextElementSibling;if(n&&n.id&&/INPUT|SELECT|TEXTAREA/.test(n.tagName))l.htmlFor=n.id;});
+renderDash();updateCounts();
+</script>
+</body>
+</html>
