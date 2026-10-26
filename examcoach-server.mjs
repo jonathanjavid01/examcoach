@@ -33,7 +33,7 @@ import { fileURLToPath } from 'node:url';
 import crypto from 'node:crypto';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
-const SITE_DIR = path.resolve(HERE, '..');
+const SITE_DIR = HERE;
 const DATA_DIR = process.env.DATA_DIR || path.join(HERE, 'data');
 mkdirSync(DATA_DIR, { recursive: true });
 
