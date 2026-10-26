@@ -61,15 +61,20 @@ const SYSTEM = `You are an IELTS Writing examiner-assessor. Score ONLY against t
 
 async function callGemini(userText) {
   const url = `${LLM_BASE}/v1beta/models/${MODEL}:generateContent`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': API_KEY },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: SYSTEM + '\n\n' + userText }] }],
-      generationConfig: { temperature: 0.2, responseMimeType: 'application/json', maxOutputTokens: 8192 },
-    }),
-  });
-  if (!res.ok) throw new Error('llm_http_' + res.status);
+  let res;
+  for (let attempt = 0; attempt < 3; attempt++) {
+    res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-goog-api-key': API_KEY },
+      body: JSON.stringify({
+        contents: [{ parts: [{ text: SYSTEM + '\n\n' + userText }] }],
+        generationConfig: { temperature: 0.2, responseMimeType: 'application/json', maxOutputTokens: 8192 },
+      }),
+    });
+    if (res.ok) break;
+    if (![429, 500, 503].includes(res.status) || attempt === 2) throw new Error('llm_http_' + res.status);
+    await new Promise((r) => setTimeout(r, 3000 * (attempt + 1)));
+  }
   const data = await res.json();
   const text = data?.candidates?.[0]?.content?.parts?.filter((p) => !p.thought).map((p) => p.text || '').join('') || '';
   const usage = data?.usageMetadata || null;
